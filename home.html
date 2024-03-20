@@ -1,53 +1,82 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title> 
-    Quiz Time!
-</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
 
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
 
-<style>
-    body{
-        background-image: url(wow.jfif);
-        background-size: cover;
-    }
-    </style>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
 
-    <body>
-        <br>
-        <body leftmargin="100"><h1><center><i><font size="+20" color="2832C2">✿WELCOME TO OUR QUIZ PAGE!✿</font></i></center></h1></body></center>
-        
-           <h2><center><font color="710193">Step right into our captivating quiz realm, dedicated to the enchanting world of HTML, CSS, and JavaScript</font></center></h2>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
 
-           <center><img src="encour.jfif"width="800" 
-            height="800" /></center>
-<br>
-<br>
-<br>
-<h1><center><font color="1O35AC">We've included a reviewer for the quiz, giving you the option to either review the questions beforehand or dive straight into answering them. The choice is yours!</font></center></h1>
-<br>
-<h1><center><font size="+5" color="1O35AC"><b><i>★HTML</i></b></center></h1>
-    <h6><center><font color="A32CC4">Tim Berners-Lee discovered HTML in 1993 which stands for Hypertext Markup Language that is the standard markup language mainly used to create web pages, consists a set of elements that helps the browser to view the content and describes the structure of a webpage. It starts with the tags of html, head, title, and body with a total of 6 heading tags with h1 being the biggest.</font></center></h6>
-<br>
-<h1><center><font size="+5" color="1O35AC"><b><i>★CSS</i></b></center></h1>
-    <h6><center><font color="A32CC4">CSS is used to design webpages. It has 5 valid position property values namely Static, Relative, Absolute, Fixed, or Sticky. We use Display to set an inline-block in CSS and text-align to align texts. Opacity is used to specify the transparency of an element and Max-width property for the content box's width.</font></center></h6>
-<br>
-<h1><center><font size="+5" color="1O35AC"><b><i>★JAVASCRIPT</i></b></center></h1>
-    <h6><center><font color="A32CC4">Javascript is a scripting language used to develop web pages. A function is a block of 'reusable code' That eliminate code complexity by enabling re-usability. To declare a function, we use function myFunction(). Pop() is used to remove the last element from an array and [] to access an array by their index; Ray is not a primitive data type. There are many ways to declare a variable in Javascript including var, lat, and const.</font></center></h6>
-<br>
-<h1><center><font color="B65FCF"><b><i>✿ARE YOU READY?✿</i></b></center></h1>
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
 
-<center>
-<a href="index.html" target="_blank">
-    <img src="ready.png" width="300" height="200">
-</a>
-<a href="home.html" target="_blank">
-    <img src="not2.png" width="300" height="200">
-</a>
-</center>
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
 
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
 
-
-
-    </body>
+</body>
+</html>

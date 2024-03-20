@@ -4,7 +4,7 @@ let questions = [
     question: "There are how many heading tags in HTML?",
     answer: "6",
     options: [
-      "8",
+      "3",
       "5",
       "8",
       "6"
